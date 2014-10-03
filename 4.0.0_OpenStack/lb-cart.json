@@ -1,0 +1,46 @@
+{  
+   "type":"lb",
+   "provider":"lb",
+   "host":"apachestratos.org",
+   "displayName":"Stratos Load Balancer",
+   "description":"LB Cartridge",
+   "version":"4.0",
+   "defaultAutoscalingPolicy":"simpleAutoscalePolicy",
+   "multiTenant":"false",
+   "portMapping":[  
+      {  
+         "protocol":"http",
+         "port":"80"
+      },
+      {  
+         "protocol":"https",
+         "port":"443"
+      }
+   ],
+   "deployment":{  
+
+   },
+   "iaasProvider":[  
+      {  
+         "type":"openstack",
+         "imageId":"RegionOne/2704ff66-0c38-428a-91eb-064b37ce3d25",
+         "maxInstanceLimit":"4",
+         "property":[  
+            {  
+               "name":"instanceType",
+               "value":"RegionOne/4"
+            },
+            {  
+               "name":"keyPair",
+               "value":"manulapp"
+            }
+         ]
+      }
+   ],
+   "property":[  
+      {  
+         "name":"load.balancer",
+         "value":"true"
+      }
+   ]
+}

@@ -1,0 +1,14 @@
+{  
+   "id":"economyDeploymentPolicy",
+   "partitionGroup":{  
+      "id":"os",
+      "partitionAlgo":"one-after-another",
+      "partition":[  
+         {  
+            "id":"AWSEC2AsiaPacificPartition1",
+            "partitionMax":"3",
+            "partitionMin":"1"
+         }
+      ]
+   }
+}

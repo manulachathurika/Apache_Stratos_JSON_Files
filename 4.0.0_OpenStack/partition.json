@@ -1,0 +1,12 @@
+{  
+   "id":"AWSEC2AsiaPacificPartition1",
+   "provider":"openstack",
+   "property":[  
+      {  
+         "name":"region",
+         "value":"RegionOne"
+      }
+   ],
+   "partitionMin":"1",
+   "partitionMax":"3"
+}

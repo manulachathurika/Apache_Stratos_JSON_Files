@@ -1,0 +1,56 @@
+{  
+   "type":"php",
+   "provider":"apache",
+   "host":"apachestratos.org",
+   "displayName":"PHP",
+   "description":"PHP Cartridge",
+   "version":"5.0",
+   "multiTenant":"false",
+   "portMapping":[  
+      {  
+         "protocol":"http",
+         "port":"80",
+         "proxyPort":"80"
+      },
+      {  
+         "protocol":"https",
+         "port":"443",
+         "proxyPort":"443"
+      }
+   ],
+   "deployment":{  
+
+   },
+   "iaasProvider":[  
+      {  
+         "type":"openstack",
+         "imageId":"RegionOne/2704ff66-0c38-428a-91eb-064b37ce3d25",
+         "networkInterfaces":[  
+            {  
+               "name":"net1",
+               "networkUuid":"84d52a6d-a9e5-472a-9935-a0e195fe5b4a",
+               "fixedIp":"10.0.1.4",
+               "floatingIp":"192.168.16.29"
+            }
+         ],
+         "maxInstanceLimit":"4",
+         "property":[  
+            {  
+               "name":"instanceType",
+               "value":"RegionOne/4"
+            },
+            {  
+               "name":"keyPair",
+               "value":"manulapp"
+            }
+         ]
+      }
+   ],
+   "loadBalancer":{  
+      "type":"lb",
+      "property":{  
+         "name":"default.load.balancer",
+         "value":"true"
+      }
+   }
+}

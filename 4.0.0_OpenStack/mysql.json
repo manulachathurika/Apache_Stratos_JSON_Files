@@ -1,0 +1,55 @@
+{  
+   "type":"mysql",
+   "provider":"data",
+   "host":"apachestratos.org",
+   "displayName":"MySQL",
+   "description":"MySQL Cartridge",
+   "version":"5.5",
+   "multiTenant":"false",
+   "portMapping":[  
+      {  
+         "protocol":"http",
+         "port":"80",
+         "proxyPort":"8280"
+      }
+   ],
+   "deployment":{  
+
+   },
+   "iaasProvider":[  
+      {  
+         "type":"openstack",
+         "imageId":"RegionOne/1cd412c1-54ce-405f-9894-ce1387073c6c",
+         "networkInterfaces":[  
+            {  
+               "name":"net1",
+               "networkUuid":"84d52a6d-a9e5-472a-9935-a0e195fe5b4a",
+               "fixedIp":"10.0.1.4",
+               "floatingIp":"192.168.16.29"
+            }
+         ],
+         "maxInstanceLimit":"4",
+         "property":[  
+            {  
+               "name":"instanceType",
+               "value":"RegionOne/4"
+            },
+            {  
+               "name":"keyPair",
+               "value":"manulac"
+            },
+            {  
+               "name":"autoAssignIp",
+               "value":false
+            }
+         ]
+      }
+   ],
+   "loadBalancer":{  
+      "type":"lb",
+      "property":{  
+         "name":"no.load.balancer",
+         "value":"true"
+      }
+   }
+}
