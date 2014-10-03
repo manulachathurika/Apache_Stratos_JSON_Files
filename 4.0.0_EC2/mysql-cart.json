@@ -1,0 +1,43 @@
+{  
+   "type":"mysql",
+   "provider":"data",
+   "host":"apachestratos.org",
+   "displayName":"MySQL",
+   "description":"MySQL Cartridge",
+   "version":"5.5",
+   "multiTenant":"false",
+   "portMapping":[  
+      {  
+         "protocol":"http",
+         "port":"80",
+         "proxyPort":"8280"
+      }
+   ],
+   "deployment":{  
+
+   },
+   "iaasProvider":[  
+      {  
+         "type":"ec2",
+         "imageId":"ap-southeast-1/ami-42297810",
+         "maxInstanceLimit":"4",
+         "property":[  
+            {  
+               "name":"instanceType",
+               "value":"m1.medium"
+            },
+            {  
+               "name":"keyPair",
+               "value":"cloudbarcampkey"
+            }
+         ]
+      }
+   ],
+   "loadBalancer":{  
+      "type":"lb",
+      "property":{  
+         "name":"default.load.balancer",
+         "value":"true"
+      }
+   }
+}
