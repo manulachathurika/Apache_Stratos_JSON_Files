@@ -6,7 +6,5 @@
          "name":"region",
          "value":"RegionOne"
       }
-   ],
-   "partitionMin":"1",
-   "partitionMax":"3"
+   ]
 }
