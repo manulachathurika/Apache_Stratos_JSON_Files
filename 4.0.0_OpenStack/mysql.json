@@ -22,10 +22,9 @@
          "imageId":"RegionOne/1cd412c1-54ce-405f-9894-ce1387073c6c",
          "networkInterfaces":[  
             {  
-               "name":"net1",
+               "name":"net1-nonroutable",
                "networkUuid":"84d52a6d-a9e5-472a-9935-a0e195fe5b4a",
                "fixedIp":"10.0.1.4",
-               "floatingIp":"192.168.16.29"
             }
          ],
          "maxInstanceLimit":"4",
@@ -40,7 +39,7 @@
             },
             {  
                "name":"autoAssignIp",
-               "value":false
+               "value":true
             }
          ]
       }
