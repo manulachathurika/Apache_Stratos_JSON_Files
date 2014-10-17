@@ -1,0 +1,15 @@
+{
+    "id": "economyDeploymentPolicy",
+    "partitionGroup":
+     {
+      "id": "np",
+      "partitionAlgo": "round-robin" ,
+      "partition": [
+        {
+          "id": "AWSEC2AsiaPacificPartition1",
+          "partitionMax": "1",
+          "partitionMin": "1"
+        }
+      ]
+    }
+}
