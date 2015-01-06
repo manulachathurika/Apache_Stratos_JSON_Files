@@ -5,11 +5,12 @@
         "cartridges": [
             {
                 "type": "tomcat",
-                "cartridgeMin": 2,
+                "cartridgeMin": 1,
                 "cartridgeMax": 5,
                 "subscribableInfo": {
                     "alias": "mytomcat",
-                    "autoscalingPolicy": "autoscale_policy_1"
+                    "autoscalingPolicy": "autoscale_policy_1",
+                    "repoUrl":"https://github.com/manulachathurika/Apache_Stratos_Tomcat_Applications.git"
                 }
             }
         ]
